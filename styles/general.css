@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Mojangles;
+  src: url(fonts/Mojang-Regular.ttf);
+}
+
+@font-face {
+  font-family: Mojangles-Bold;
+  src: url(fonts/Mojang-Bold.ttf);
+}
+
+p {
+  font-family: Mojangles, Arial;
+  font-size: 13px;
+  word-spacing: 4px;
+  color: rgb(63, 63, 63);
+}
+
+body {
+  padding-top: 55px;
+  margin-bottom: 1000px;
+  background-color: rgb(198, 198, 198);
+}
