@@ -308,7 +308,7 @@
   {
     "id": "chestcavity.withered",
     "name": "Withered",
-    "tooltip": "Reduces duration of wither from eating or drinking, essentially, uselessly bugged.",
+    "tooltip": "Reduces duration of wither from wither roses.",
     "weight": 1
   }
 ]

@@ -6,3 +6,38 @@
   list-style-type: none;
   line-height: 25px;
 }
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-paragraph {
+    display: inline-block;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+}
+
+.tooltip-paragraph .tooltip-text {
+  visibility: hidden;
+  /*width: 700px;*/
+  background-color: black;
+  color: rgb(198, 198, 198);
+  text-align: left;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: rgb(31, 0, 131);
+  border-width: 3px;
+  padding: 1px 10px 0 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.tooltip-paragraph:hover .tooltip-text {
+  visibility: visible;
+}
