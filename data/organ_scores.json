@@ -1,6 +1,6 @@
 [
   {
-    "id": "chestcavity.arrow_dodging",
+    "id": "chestcavity:arrow_dodging",
     "name": "Arrow Dodging",
     "tooltip": "Values greater than 0 allow user to teleport to dodge projectiles.",
     "weight": 0.25
@@ -18,49 +18,49 @@
     "weight": 0.25
   },
   {
-    "id": "chestcavity.buff_purging",
+    "id": "chestcavity:buff_purging",
     "name": "Buff Purging",
     "tooltip": "Reduces duration of beneficial status effects from eating or drinking.",
     "weight": -0.5
   },
   {
-    "id": "chestcavity.buoyant",
+    "id": "chestcavity:buoyant",
     "name": "Buoyancy",
     "tooltip": "Applies a constant force to Y velocity, of 0.02 * buoyancy per tick.",
     "weight": 0.375
   },
   {
-    "id": "chestcavity.carnivorous_digestion",
+    "id": "chestcavity:carnivorous_digestion",
     "name": "Carnivorous Digestion",
     "tooltip": "Affects how many hunger shanks meat items restore. Meat items are food items that can be fed to wolves.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.carnivorous_nutrition",
+    "id": "chestcavity:carnivorous_nutrition",
     "name": "Carnivorous Nutrition",
     "tooltip": "Affects how many saturation points meat items restore. Meat items are food items that can be fed to wolves.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.creepy",
+    "id": "chestcavity:creepy",
     "name": "Creepy",
     "tooltip": "Ability. Allows player user to self-destruct, with explosion size based on Explosive organ score.",
     "weight": 0.125
   },
   {
-    "id": "chestcavity.crystalsynthesis",
+    "id": "chestcavity:crystalsynthesis",
     "name": "Crystalsynthesis",
     "tooltip": "Connects to nearby end crystals to restore hunger, then saturation, then health. Greater scores increase frequency.",
     "weight": 1
   },
   {
-    "id": "chestcavity.defense",
+    "id": "chestcavity:defense",
     "name": "Defense",
     "tooltip": "Reduces incoming damage. By default, 4 defense halves incoming damage.",
     "weight": 1
   },
   {
-    "id": "chestcavity.destructive_collisions",
+    "id": "chestcavity:destructive_collisions",
     "name": "Destructive Collisions",
     "tooltip": "Unused, does nothing",
     "weight": 0
@@ -72,25 +72,25 @@
     "weight": 1
   },
   {
-    "id": "chestcavity.digestion",
+    "id": "chestcavity:digestion",
     "name": "Digestion",
     "tooltip": "Affects how many hunger shanks food items restore.",
     "weight": 1
   },
   {
-    "id": "chestcavity.dragon_bombs",
+    "id": "chestcavity:dragon_bombs",
     "name": "Dragon Bombs",
     "tooltip": "Ability. Allows player user to shoot dragon fireballs.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.dragon_breath",
+    "id": "chestcavity:dragon_breath",
     "name": "Dragon Breath",
     "tooltip": "Ability. Allows player user to create dragon breath.",
     "weight": 0.375
   },
   {
-    "id": "chestcavity.ease_of_access",
+    "id": "chestcavity:ease_of_access",
     "name": "Ease of Access",
     "tooltip": "Values greater than 0 prevent damage taken from the chest opener, and allow user's chest to be opened at any health.",
     "weight": 1
@@ -102,7 +102,7 @@
     "weight": 0.5
   },
   {
-    "id": "chestcavity.explosive",
+    "id": "chestcavity:explosive",
     "name": "Explosive",
     "tooltip": "Statistic. Increases size of explosion from Creepy.",
     "weight": 0.125
@@ -114,37 +114,37 @@
     "weight": 1
   },
   {
-    "id": "chestcavity.fire_resistant",
+    "id": "chestcavity:fire_resistant",
     "name": "Fire Resistance",
     "tooltip": "Reduces damage taken from fire. By default, 4 fire resistance quarters incoming fire damage.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.forceful_spit",
+    "id": "chestcavity:forceful_spit",
     "name": "Forceful Spit",
     "tooltip": "Ability. Allows player user to fire llama spit projectiles.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.furnace_powered",
+    "id": "chestcavity:furnace_powered",
     "name": "Furnace Powered",
     "tooltip": "Ability. Allows player user to consume fuel to gain a hunger restoration over time effect.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.ghastly",
+    "id": "chestcavity:ghastly",
     "name": "Ghastly",
     "tooltip": "Ability. Allows player user to fire ghast fireballs.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.glowing",
+    "id": "chestcavity:glowing",
     "name": "Glowing",
     "tooltip": "Values greater than 0 grant user the glowing effect.",
     "weight": 0
   },
   {
-    "id": "chestcavity.grazing",
+    "id": "chestcavity:grazing",
     "name": "Grazing",
     "tooltip": "Ability. Allows player user to convert grass blocks to dirt blocks for a hunger restoration over time effect.",
     "weight": 0.5
@@ -156,61 +156,61 @@
     "weight": 1
   },
   {
-    "id": "chestcavity.herbivorous_digestion",
+    "id": "chestcavity:herbivorous_digestion",
     "name": "Herbivorous Digestion",
     "tooltip": "Affects how many hunger shanks non-meat items restore. Meat items are food items that can be fed to wolves.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.herbivorous_nutrition",
+    "id": "chestcavity:herbivorous_nutrition",
     "name": "Herbivorous Nutrition",
     "tooltip": "Affects how many saturation points non-meat items restore. Meat items are food items that can be fed to wolves.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.hydroallergenic",
+    "id": "chestcavity:hydroallergenic",
     "name": "Hydroallergenic",
     "tooltip": "Damages user in water.",
     "weight": -0.5
   },
   {
-    "id": "chestcavity.hydrophobia",
+    "id": "chestcavity:hydrophobia",
     "name": "Hydrophobia",
     "tooltip": "Teleports user out of water.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.impact_resistant",
+    "id": "chestcavity:impact_resistant",
     "name": "Impact Resistant",
     "tooltip": "Reduces fall damage taken. By default, 4 impact resistance quarters incoming fall damage.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.incompatibility",
+    "id": "chestcavity:incompatibility",
     "name": "Incompatibility",
     "tooltip": "Internally used organ score. Determines organ rejection.",
     "weight": 0
   },
   {
-    "id": "chestcavity.iron_repair",
+    "id": "chestcavity:iron_repair",
     "name": "Iron Repair",
     "tooltip": "Ability. Allows player used to consume iron ingots or iron scrap to heal by a default of 25% of maximum health.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.knockback_resistant",
+    "id": "chestcavity:knockback_resistant",
     "name": "Knockback Resistant",
     "tooltip": "Reduces knockback taken.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.launching",
+    "id": "chestcavity:launching",
     "name": "Launching",
     "tooltip": "Applies a vertical force to attacked entities of a default of 0.1 * launching.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.leaping",
+    "id": "chestcavity:leaping",
     "name": "Leaping",
     "tooltip": "Affects jump height.",
     "weight": 0.5
@@ -222,13 +222,13 @@
     "weight": 1
   },
   {
-    "id": "chestcavity.metabolism",
+    "id": "chestcavity:metabolism",
     "name": "Metabolism",
     "tooltip": "Affects rate at which hunger and saturation are converted to health for natural healing.",
     "weight": 1
   },
   {
-    "id": "chestcavity.nerves",
+    "id": "chestcavity:nerves",
     "name": "Nerves",
     "tooltip": "Total values less than or equal to 0 prevent user from moving. Affects player user's mining and attack speed.",
     "weight": 0.5
@@ -246,31 +246,31 @@
     "weight": 0.5
   },
   {
-    "id": "chestcavity.pyromancy",
+    "id": "chestcavity:pyromancy",
     "name": "Spits Fire",
     "tooltip": "Ability. Allows player user to fire blaze fireballs.",
     "weight": 0.75
   },
   {
-    "id": "chestcavity.rot_digestion",
+    "id": "chestcavity:rot_digestion",
     "name": "Rot Digestion",
     "tooltip": "Affects how many hunger shanks rotten flesh items restore.",
     "weight": 1
   },
   {
-    "id": "chestcavity.rotgut",
+    "id": "chestcavity:rotgut",
     "name": "Rotgut",
     "tooltip": "Affects how many saturation points rotten flesh items restore.",
     "weight": 1
   },
   {
-    "id": "chestcavity.shulker_bullets",
+    "id": "chestcavity:shulker_bullets",
     "name": "Shoots Bullets",
     "tooltip": "Ability. Allows player user to fire homing shulker bullets.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.silk",
+    "id": "chestcavity:silk",
     "name": "Produces Silk",
     "tooltip": "Ability. Allows player user to create string, cobwebs, and/or wool.",
     "weight": 1
@@ -288,25 +288,25 @@
     "weight": 0.5
   },
   {
-    "id": "chestcavity.swim_speed",
+    "id": "chestcavity:swim_speed",
     "name": "Swim Speed",
     "tooltip": "Affects movement speed of user while in water.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.venomous",
+    "id": "chestcavity:venomous",
     "name": "Venomous",
     "tooltip": "Inflicts attacked targets with corresponding status effect when punched with bare hand.",
     "weight": 0.5
   },
   {
-    "id": "chestcavity.water_breath",
+    "id": "chestcavity:water_breath",
     "name": "Water Breath",
     "tooltip": "Affects rate at which air is gained inside of water. Cleaved into one fourth of its value while sprinting. 0.5 breath prevents air gain or loss and anything lower causes air loss.",
     "weight": 0.25
   },
   {
-    "id": "chestcavity.withered",
+    "id": "chestcavity:withered",
     "name": "Withered",
     "tooltip": "Reduces duration of wither from wither roses.",
     "weight": 1

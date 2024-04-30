@@ -19,17 +19,20 @@
 
 }
 
-.tooltip-paragraph .tooltip-text {
+.tooltip-container {
+    display: inline-block;
+}
+
+.tooltip-paragraph .tooltip-container {
   visibility: hidden;
   /*width: 700px;*/
-  background-color: black;
-  color: rgb(198, 198, 198);
+  background-color: #1b0c1b;
   text-align: left;
   border-radius: 3px;
   border-style: solid;
-  border-color: rgb(31, 0, 131);
+  border-color: rgb(42, 8, 94);
   border-width: 3px;
-  padding: 1px 10px 0 10px;
+  padding: 1px 4px 1px 4px;
 
   /* Position the tooltip */
   position: absolute;
@@ -38,6 +41,25 @@
   margin-top: -5px;
 }
 
-.tooltip-paragraph:hover .tooltip-text {
+.tooltip-name, .tooltip-description, .tooltip-id {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.tooltip-name {
+  color: #fcfcfc;
+}
+
+.tooltip-description {
+    color: rgb(168, 168, 168);
+}
+
+.tooltip-id {
+    color: #545454;
+}
+
+.tooltip-paragraph:hover .tooltip-container {
   visibility: visible;
 }
