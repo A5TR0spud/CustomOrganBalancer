@@ -1,5 +1,15 @@
-document.write("<p>Hello World!</p>");
+createList();
+
+async function createList() {
+    let x = await fetch("data/organ_scores.json");
+    let jsonArray = await x.json();
+    jsonArray.forEach((item) => {
+        var paragraph = document.createElement('p');
+        paragraph.textContent = item.name;
+        document.body.appendChild(paragraph);
+    });
+}
 
 //todo: take organ_scores.json, create a flex list with name : input score : * weight,
-//hoverable tooltip, final score calculator, verdict "translator"
-///give command, json generator
+//todo: hoverable tooltip, final score calculator, verdict "translator"
+//todo: give command, json generator

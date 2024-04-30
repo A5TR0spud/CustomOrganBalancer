@@ -61,7 +61,7 @@
   },
   {
     "id": "chestcavity.destructive_collisions",
-    "name": "/!&bsol; Destructive Collisions",
+    "name": "Destructive Collisions",
     "tooltip": "Unused, does nothing",
     "weight": 0
   },
