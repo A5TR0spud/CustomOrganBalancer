@@ -1,12 +1,12 @@
 createList();
 
 async function createList() {
-    let x = await fetch("data/organ_scores.json");
+    let x = await fetch("./data/organ_scores.json");
     let jsonArray = await x.json();
     jsonArray.forEach((item) => {
         var paragraph = document.createElement('p');
         paragraph.textContent = item.name;
-        document.body.appendChild(paragraph);
+        document.getElementById("score-list").appendChild(paragraph);
     });
 }
 
