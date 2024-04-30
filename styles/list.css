@@ -16,11 +16,12 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-
+    margin: 0 0 23px 0;
 }
 
 .tooltip-container {
     display: inline-block;
+    max-width: 500px;
 }
 
 .tooltip-paragraph .tooltip-container {
@@ -28,11 +29,11 @@
   /*width: 700px;*/
   background-color: #1b0c1b;
   text-align: left;
-  border-radius: 3px;
+  border-radius: 4px;
   border-style: solid;
   border-color: rgb(42, 8, 94);
-  border-width: 3px;
-  padding: 1px 4px 1px 4px;
+  border-width: 4px;
+  padding: 4px;
 
   /* Position the tooltip */
   position: absolute;
@@ -44,20 +45,22 @@
 .tooltip-name, .tooltip-description, .tooltip-id {
     margin: 0;
     padding: 0;
-    line-height: 18px;
     font-size: 13px;
 }
 
 .tooltip-name {
-  color: #fcfcfc;
+    margin-top: -6px;
+    color: #fcfcfc;
 }
 
 .tooltip-description {
     color: rgb(168, 168, 168);
+    line-height: 18px;
 }
 
 .tooltip-id {
     color: #545454;
+    margin-bottom: -5px;
 }
 
 .tooltip-paragraph:hover .tooltip-container {
