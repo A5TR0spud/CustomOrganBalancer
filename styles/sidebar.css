@@ -50,3 +50,21 @@
   border-left-color: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+.give-command-generator {
+    margin-top: 10px;
+    background-color: #696969;
+    padding: 5px;
+    max-width:200px;
+}
+
+.give-command {
+    padding: 0;
+    margin: 0;
+    color: white;
+    word-wrap: break-word;
+    line-height: 18px;
+    -webkit-user-select: all; /* Safari */
+    -ms-user-select: all; /* IE 10 and IE 11 */
+    user-select: all; /* Standard syntax */
+}

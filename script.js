@@ -94,6 +94,8 @@ async function createList() {
                     break;
                 }
             }
+            var nbt_generation = document.getElementById("give-command");
+            var nbt_content = "";
             for (let i = 0; i < totalsJson.length; i++) {
                 var totalItem = totalsJson[i];
                 if (totalItem.value == 0) {
@@ -103,9 +105,13 @@ async function createList() {
                 scoreItem.textContent = determineScorePrefix(totalItem.scoreDisplay, totalItem.value, totalItem.name);
                 scoreItem.className = "sidebar-score";
                 sidebarScoreList.appendChild(scoreItem);
+                nbt_content += '"' + totalItem.id + '": ' + totalItem.value + 'f'
+                if (i < totalsJson.length - 1) {
+                    nbt_content += ",";
+                }
             }
+            nbt_generation.textContent = 'organData:{' + nbt_content + '}';
 
-            document.getElementById("sidebar-score-list").textContent = scoreList[0];
             console.log(totalsJson);
         });
         product_input_weight.className = "product-input-weight";
