@@ -1,18 +1,18 @@
-.cob-title {
-  font-family: Mojangles-Bold, Mojangles, Arial;
-  font-size: 16px;
-  text-align: center;
+.sidebar-text-total, .sidebar-text-verdict {
+  text-align: left;
+  line-height: 23px;
   margin-top: 20px;
-  word-spacing: 5px;
 }
 
-.header {
+.sidebar {
   position: fixed;
-  top: 0;
+  top: 60px;
+  bottom: 0;
   right: 0;
-  left: 0;
-  min-height: 55px;
+  min-width: 300px;
   z-index: 100;
+
+  padding: 0px 50px 50px 25px;
 
   background-color: rgb(198, 198, 198);
   border-width: 3px;

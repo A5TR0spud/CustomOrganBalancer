@@ -1,4 +1,5 @@
 createList();
+var totalsJson = [];
 
 async function createList() {
     let x = await fetch("./data/organ_scores.json");
@@ -50,6 +51,33 @@ async function createList() {
         weight_multiplier.textContent = "* " + item.weight;
         weight_multiplier.className = "weight-multiplier";
         divider.appendChild(weight_multiplier);
+
+        //product input * weight
+        var product_input_weight = document.createElement('p');
+        product_input_weight.textContent = "= 0";
+        score_input.addEventListener('input', () => {
+            const product = parseFloat(score_input.value) * item.weight;
+            const productText = document.createElement('p');
+            product_input_weight.textContent = "= " + product;
+            var total = 0;
+            var replacedID = false;
+            for (let i = 0; i < totalsJson.length; i++) {
+                if (totalsJson[i].id == item.id) {
+                    totalsJson[i].value = product;
+                    replacedID = true;
+                }
+                total += totalsJson[i].value;
+            }
+            if (!replacedID) {
+                totalsJson.push({"id": item.id, "value": product});
+                total += product;
+            }
+            document.getElementById("sidebar-text-total").textContent = "Total Organ Value: " + total;
+            document.getElementById("sidebar-text-verdict").textContent = "Verdict: " + (total < 0.5 ? "Underpowered" : total < 0.75 ? "Poor" : total < 1 ? "Average" : total == 1 ? "Balanced" : total < 1.25 ? "Exceptional" : "Overpowered");
+            console.log(totalsJson);
+        });
+        product_input_weight.className = "product-input-weight";
+        divider.appendChild(product_input_weight);
 
         //finalize
         document.getElementById("score-list").appendChild(divider);

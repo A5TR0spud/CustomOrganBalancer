@@ -97,10 +97,10 @@
 .info-box:hover {
     outline: none;
     color: white;
-    border-top-color: rgb(85, 85, 85);
+    border-top-color: rgb(55, 55, 55);
     border-right-color: white;
     border-bottom-color: white;
-    border-left-color: rgb(85, 85, 85);
+    border-left-color: rgb(55, 55, 55);
     background-color: #8b8b8b; /*rgb(198, 198, 198);*/
 }
 
@@ -129,20 +129,20 @@
 .score-input:hover {
     outline: none;
     color: white;
-    border-top-color: rgb(85, 85, 85);
+    border-top-color: rgb(55, 55, 55);
     border-right-color: white;
     border-bottom-color: white;
-    border-left-color: rgb(85, 85, 85);
+    border-left-color: rgb(55, 55, 55);
     background-color: #8b8b8b; /*rgb(198, 198, 198);*/
 }
 
 .score-input:focus {
     outline: none;
     color: white;
-    border-top-color: rgb(85, 85, 85);
+    border-top-color: rgb(55, 55, 55);
     border-right-color: white;
     border-bottom-color: white;
-    border-left-color: rgb(85, 85, 85);
+    border-left-color: rgb(55, 55, 55);
     background-color: #8b8b8b; /*rgb(198, 198, 198);*/
 }
 
@@ -158,8 +158,9 @@
   -moz-appearance: textfield;
 }
 
-.weight-multiplier {
+.weight-multiplier, .product-input-weight {
     margin: 3px 25px 0 0;
     padding: 0;
-    width = 50px;
+    width: 75px;
+    display: inline-block;
 }
