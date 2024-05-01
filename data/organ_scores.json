@@ -297,14 +297,14 @@
     "id": "chestcavity:rot_digestion",
     "name": "Rot Digestion",
     "tooltip": "Affects how many hunger shanks rotten flesh items restore. If the sum of rotgut and rot digestion is greater than 0, player users may eat rotten food without risk of hunger.",
-    "weight": 1,
+    "weight": 0.5,
     "scoreDisplay": "prefix"
   },
   {
     "id": "chestcavity:rotgut",
     "name": "Rotgut",
     "tooltip": "Affects how many saturation points rotten flesh items restore. If the sum of rotgut and rot digestion is greater than 0, player users may eat rotten food without risk of hunger.",
-    "weight": 1,
+    "weight": 0.5,
     "scoreDisplay": "prefix"
   },
   {
