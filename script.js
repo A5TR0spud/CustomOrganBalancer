@@ -94,7 +94,7 @@ async function createList() {
                     break;
                 }
             }
-            var nbt_generation = document.getElementById("give-command");
+            const nbt_generation = document.getElementById("give-command");
             var nbt_content = "";
             for (let i = 0; i < totalsJson.length; i++) {
                 var totalItem = totalsJson[i];
@@ -110,6 +110,7 @@ async function createList() {
                     nbt_content += ",";
                 }
             }
+            document.getElementById("give-command-generator").style.width = sidebarScoreList.style.width;
             nbt_generation.textContent = 'organData:{' + nbt_content + '}';
 
             console.log(totalsJson);
@@ -152,5 +153,19 @@ function determineScorePrefix(scoreDisplay, value, name) {
     return name;
 }
 
+
+function copyNBT() {
+    const toCopyElement = document.getElementById("give-command");
+    var copyText = toCopyElement.textContent;
+    // Select the text field
+    //toCopyElement.select();
+    //toCopyElement.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText);
+
+    // Alert the copied text
+    alert("Copied the text: " + copyText);
+}
 //todo: list of selected organ scores, delete value 0 items from the totalsJson. if totalsJson is empty, assume 0
 //todo: give command, json generator

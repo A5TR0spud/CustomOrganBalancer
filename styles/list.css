@@ -164,3 +164,7 @@
     width: 75px;
     display: inline-block;
 }
+
+.product-input-weight {
+    flex: 1;
+}

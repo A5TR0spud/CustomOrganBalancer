@@ -18,10 +18,25 @@ p {
   user-select: none; /* Standard syntax */
 }
 
+div {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 body {
   padding-top: 70px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: rgb(198, 198, 198);
   margin-bottom: 30px;
+}
+
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
