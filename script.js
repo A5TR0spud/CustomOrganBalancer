@@ -84,6 +84,5 @@ async function createList() {
     });
 }
 
-//todo: take organ_scores.json, create a flex list with name : input score : * weight,
-//todo: hoverable tooltip, final score calculator, verdict "translator"
+//todo: list of selected organ scores, delete value 0 items from the totaljson. if totaljson is empty, assume 0
 //todo: give command, json generator
