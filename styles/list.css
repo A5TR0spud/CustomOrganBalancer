@@ -5,18 +5,25 @@
   color: rgb(63, 63, 63);
   list-style-type: none;
   line-height: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-.tooltip {
+.score-list-item {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: top;
 }
 
-.tooltip .tooltip-paragraph {
+.score-list-item .score-title-paragraph {
     display: inline-block;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     margin: 0 0 23px 0;
+    width: 250px;
 }
 
 .tooltip-container {
@@ -24,7 +31,7 @@
     max-width: 500px;
 }
 
-.tooltip-paragraph .tooltip-container {
+.info-box .tooltip-container {
   visibility: hidden;
   /*width: 700px;*/
   background-color: #1b0c1b;
@@ -38,8 +45,12 @@
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: -5px;
+}
+
+.info-box:hover .tooltip-container {
+  visibility: visible;
 }
 
 .tooltip-name, .tooltip-description, .tooltip-id {
@@ -63,6 +74,87 @@
     margin-bottom: -5px;
 }
 
-.tooltip-paragraph:hover .tooltip-container {
-  visibility: visible;
+.info-box {
+    font-family: Mojangles, Arial;
+    font-size: 13px;
+    color: rgb(63, 63, 63);
+    display: inline;
+
+    height: 23px;
+    width: 23px;
+    padding-left: 1px;
+    text-align: center;
+
+    background-color: rgb(198, 198, 198);
+    border-width: 3px;
+    border-radius: 2px;
+    border-style: solid;
+    border-top-color: white;
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: white;
+    margin: 0 25px 0 0;
+}
+
+.info-box:hover {
+    outline: none;
+    color: white;
+    border-top-color: rgb(85, 85, 85);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(85, 85, 85);
+    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+}
+
+.score-input {
+    font-family: Mojangles, Arial;
+    font-size: 13px;
+    color: rgb(63, 63, 63);
+    display: inline;
+
+    height: 23px;
+    width: 46px;
+    padding-left: 4px;
+    text-align: right;
+
+    background-color: rgb(198, 198, 198);
+    border-width: 3px;
+    border-radius: 2px;
+    border-style: solid;
+    border-top-color: white;
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: white;
+}
+
+.score-input:hover {
+    outline: none;
+    color: white;
+    border-top-color: rgb(85, 85, 85);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(85, 85, 85);
+    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+}
+
+.score-input:focus {
+    outline: none;
+    color: white;
+    border-top-color: rgb(85, 85, 85);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(85, 85, 85);
+    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+}
+
+/* remove arrows from input field */
+/* Chrome, Safari, Edge, Opera */
+.score-input::-webkit-outer-spin-button,
+.score-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.score-input[type=number] {
+  -moz-appearance: textfield;
 }

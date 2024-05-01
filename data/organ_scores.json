@@ -86,7 +86,7 @@
   {
     "id": "chestcavity:dragon_breath",
     "name": "Dragon Breath",
-    "tooltip": "Ability. Allows player user to create dragon breath.",
+    "tooltip": "Ability. Allows player user to shoot dragon breath.",
     "weight": 0.375
   },
   {
@@ -218,7 +218,7 @@
   {
     "id": "chestcavity:luck",
     "name": "Luck",
-    "tooltip": "Affects user luck. In vanilla, luck changes loot from loot tables with quality attributes and bonus rolls, which is only fishing. It does technically apply to chest loot, but since chest loot does not have these attributes, it does not actually change chest loot.",
+    "tooltip": "Affects user luck. In vanilla, luck changes loot from loot tables with quality attributes and bonus rolls, which is most commonly a fishing feature.",
     "weight": 1
   },
   {
@@ -276,7 +276,7 @@
     "weight": 1
   },
   {
-    "id": "chestcavity:strength",
+    "id": "chestcavity:speed",
     "name": "Speed",
     "tooltip": "Affects movement speed of user.",
     "weight": 0.5
@@ -296,7 +296,7 @@
   {
     "id": "chestcavity:venomous",
     "name": "Venomous",
-    "tooltip": "Inflicts attacked targets with corresponding status effect when punched with bare hand.",
+    "tooltip": "Venom gland's ability. Inflicts attacked targets with corresponding status effect when punched with bare hand.",
     "weight": 0.5
   },
   {
