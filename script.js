@@ -52,7 +52,7 @@ async function createList() {
         weight_multiplier.className = "weight-multiplier";
         divider.appendChild(weight_multiplier);
 
-        //product input * weight
+        //product input * weight, total, score list
         var product_input_weight = document.createElement('p');
         product_input_weight.textContent = "= 0";
         score_input.addEventListener('input', () => {
@@ -63,17 +63,49 @@ async function createList() {
             var replacedID = false;
             for (let i = 0; i < totalsJson.length; i++) {
                 if (totalsJson[i].id == item.id) {
-                    totalsJson[i].value = product;
+                    totalsJson[i].value = parseFloat(score_input.value);
                     replacedID = true;
                 }
-                total += totalsJson[i].value;
+                if (totalsJson[i].value == 0) {
+                    totalsJson.splice(i, 1);
+                    i--;
+                    continue;
+                }
+                total += totalsJson[i].weight * totalsJson[i].value;
             }
-            if (!replacedID) {
-                totalsJson.push({"id": item.id, "value": product});
+            if (!replacedID & parseFloat(score_input.value) != 0) {
+                totalsJson.push({"name": item.name, "id": item.id, "scoreDisplay": item.scoreDisplay, "value": parseFloat(score_input.value), "weight": item.weight});
                 total += product;
             }
             document.getElementById("sidebar-text-total").textContent = "Total Organ Value: " + total;
-            document.getElementById("sidebar-text-verdict").textContent = "Verdict: " + (total < 0.5 ? "Underpowered" : total < 0.75 ? "Poor" : total < 1 ? "Average" : total == 1 ? "Balanced" : total < 1.25 ? "Exceptional" : "Overpowered");
+            document.getElementById("sidebar-text-verdict").textContent = "Verdict: " +
+            (total < 0.5 ? "Underpowered" :
+            total < 0.75 ? "Poor - Rotten" :
+            total < 1 ? "Average - Animal" :
+            total == 1 ? "Balanced - Human" :
+            total <= 1.0625 ? "Within error margin" :
+            "Overpowered");
+
+            const sidebarScoreList = document.getElementById("sidebar-score-list");
+            while (sidebarScoreList.lastChild) {
+                if (sidebarScoreList.lastChild.className == "sidebar-score") {
+                    sidebarScoreList.removeChild(sidebarScoreList.lastChild);
+                } else {
+                    break;
+                }
+            }
+            for (let i = 0; i < totalsJson.length; i++) {
+                var totalItem = totalsJson[i];
+                if (totalItem.value == 0) {
+                    continue;
+                }
+                var scoreItem = document.createElement('p');
+                scoreItem.textContent = determineScorePrefix(totalItem.scoreDisplay, totalItem.value, totalItem.name);
+                scoreItem.className = "sidebar-score";
+                sidebarScoreList.appendChild(scoreItem);
+            }
+
+            document.getElementById("sidebar-score-list").textContent = scoreList[0];
             console.log(totalsJson);
         });
         product_input_weight.className = "product-input-weight";
@@ -84,5 +116,35 @@ async function createList() {
     });
 }
 
-//todo: list of selected organ scores, delete value 0 items from the totaljson. if totaljson is empty, assume 0
+function determineScorePrefix(scoreDisplay, value, name) {
+    value = parseFloat(value);
+    if (scoreDisplay == "prefix") {
+        if (value >= 1.5) {
+            return "Supernatural " + name;
+        } if (value >= 1.25) {
+            return "Exceptional " + name;
+        } if (value >= 1) {
+            return "Good " + name;
+        } if (value >= 0.75) {
+            return "Average " + name;
+        } if (value >= 0.5) {
+            return "Poor " + name;
+        } if (value >= 0) {
+            return "Pathetic " + name;
+        } if (value >= -0.25) {
+            return "Slightly Reduces " + name;
+        } if (value >= -0.5) {
+            return "Reduces " + name;
+        } if (value >= -0.75) {
+            return "Greatly Reduces " + name;
+        }
+        return "Cripples " + name;
+    }
+    if (scoreDisplay == "severely" & value >= 2) {
+        return "Severely " + name;
+    }
+    return name;
+}
+
+//todo: list of selected organ scores, delete value 0 items from the totalsJson. if totalsJson is empty, assume 0
 //todo: give command, json generator

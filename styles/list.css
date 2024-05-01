@@ -42,7 +42,7 @@
 
   /* Position the tooltip */
   position: absolute;
-  z-index: 1;
+  z-index: 95;
   margin-left: 20px;
   margin-top: -5px;
 }
