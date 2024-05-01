@@ -13,6 +13,9 @@ p {
   font-size: 13px;
   word-spacing: 4px;
   color: rgb(63, 63, 63);
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 body {

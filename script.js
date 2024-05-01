@@ -44,6 +44,13 @@ async function createList() {
         score_input.className = "score-input";
         score_input.step = "any";
         divider.appendChild(score_input);
+
+        //weight multiplier
+        var weight_multiplier = document.createElement('p');
+        weight_multiplier.textContent = "* " + item.weight;
+        weight_multiplier.className = "weight-multiplier";
+        divider.appendChild(weight_multiplier);
+
         //finalize
         document.getElementById("score-list").appendChild(divider);
     });
