@@ -1,7 +1,19 @@
-.sidebar-text-total, .sidebar-text-verdict, sidebar-score-list {
+.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text {
   text-align: left;
-  line-height: 23px;
-  margin-top: 20px;
+  line-height: 18px;
+  margin: 20px 0 -5px 0;
+}
+
+.sidebar-text-total {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 300px;
+}
+
+.nbt-data-text {
+    margin-bottom: 0;
 }
 
 .sidebar-score-list {
@@ -13,6 +25,7 @@
     padding: 4px 4px 0px 4px;
     display: inline-block;
     min-width: 50px;
+    margin: 10px 0 0 0;
 }
 
 .sidebar-score-name {
@@ -52,7 +65,7 @@
 }
 
 .nbt-data-flex {
-    margin-top: 10px;
+    margin: 10px 0 0 0;
 }
 
 .give-command-generator {

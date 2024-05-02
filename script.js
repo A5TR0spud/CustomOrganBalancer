@@ -167,5 +167,10 @@ function copyNBT() {
     // Alert the copied text
     alert("Copied the text: " + copyText);
 }
+
+function openLink(arg) {
+    window.open(arg, '_blank');
+}
+
 //todo: list of selected organ scores, delete value 0 items from the totalsJson. if totalsJson is empty, assume 0
 //todo: give command, json generator

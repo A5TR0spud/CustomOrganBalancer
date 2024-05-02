@@ -2,8 +2,9 @@
   font-family: Mojangles-Bold, Mojangles, Arial;
   font-size: 16px;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   word-spacing: 5px;
+  flex: 1;
 }
 
 .header {
@@ -13,6 +14,9 @@
   left: 0;
   min-height: 55px;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   background-color: rgb(198, 198, 198);
   border-width: 3px;
@@ -23,4 +27,54 @@
   border-bottom-color: rgb(85, 85, 85);
   border-left-color: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.link-button-container {
+    margin: 0 10.5px 0 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.link-button {
+    background-color: rgb(198, 198, 198);
+    height: 34px;
+    width: 34px;
+    padding: 1px;
+    text-align: center;
+    margin: 0 0 0 -4px;
+
+    border-width: 3px;
+    border-radius: 0;
+    border-style: solid;
+    border-top-color: white;
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: white;
+}
+
+.link-button-image {
+    height: 28px;
+    width: 28px;
+    margin: -1px 0 0 -1px;
+    padding: 0;
+    image-rendering: pixelated;
+    image-color: #3f3f3f;
+}
+
+.link-button:hover {
+    border-color: white;
+}
+
+.link-button:active {
+    background-color: #8b8b8b;
+    border-top-color: rgb(55, 55, 55);
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: rgb(55, 55, 55);
+}
+
+.header-placeholder {
+    width: 68px;
+    margin: 0 10.5px 0 10.5px;
+    padding: 0;
 }
