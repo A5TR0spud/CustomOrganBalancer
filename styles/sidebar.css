@@ -1,7 +1,11 @@
-.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text {
+.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text, .hide-tooltip-text {
   text-align: left;
   line-height: 18px;
   margin: 20px 0 -5px 0;
+}
+
+.hide-tooltip-text {
+    position: relative;
 }
 
 .sidebar-text-total {
@@ -97,15 +101,11 @@
     user-select: all; /* Standard syntax */
 }
 
-.nbt-copy-button {
+.nbt-copy-button, .tooltip-cycle-button {
     background-color: rgb(198, 198, 198);
-    height: 34px;
-    width: 34px;
     padding: 1px;
 
     display: inline-block;
-
-    cursor: copy;
 
     border-width: 3px;
     border-radius: 0;
@@ -114,6 +114,30 @@
     border-right-color: rgb(85, 85, 85);
     border-bottom-color: rgb(85, 85, 85);
     border-left-color: white;
+}
+
+.nbt-copy-button {
+    height: 34px;
+    width: 34px;
+    cursor: copy;
+}
+
+.tooltip-cycle-button {
+    height: 23px;
+    width: 1fr;
+    margin: -3px 0 0 12px;
+    position: absolute;
+}
+
+.tooltip-cycle-text {
+    font-family: Mojangles, Arial;
+    font-size: 13px;
+    word-spacing: 4px;
+    color: rgb(63, 63, 63);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    margin: 2px 4px 2px 4px;
 }
 
 .copy-button-image {
@@ -126,11 +150,11 @@
     display: block;
 }
 
-.nbt-copy-button:hover {
+.nbt-copy-button:hover, .tooltip-cycle-button:hover {
     border-color: white;
 }
 
-.nbt-copy-button:active {
+.nbt-copy-button:active, .tooltip-cycle-button:active {
     background-color: #8b8b8b;
     border-top-color: rgb(55, 55, 55);
     border-right-color: white;
