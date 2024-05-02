@@ -102,6 +102,8 @@
     padding: 1px;
     text-align: center;
 
+    cursor: pointer;
+
     border-width: 3px;
     border-radius: 0;
     border-style: solid;
