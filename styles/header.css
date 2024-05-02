@@ -51,9 +51,10 @@
     background-color: rgb(198, 198, 198);
     height: 34px;
     width: 34px;
-    padding: 1px;
-    text-align: center;
+    padding: 0;
     margin: 0 0 0 -4px;
+
+    display: inline-block;
 
     cursor: pointer;
 
@@ -67,12 +68,13 @@
 }
 
 .link-button-image {
-    height: 28px;
-    width: 28px;
-    margin: -1px 0 0 -1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 0;
     padding: 0;
     image-rendering: pixelated;
-    image-color: #3f3f3f;
+    display: block;
 }
 
 .link-button:hover {
