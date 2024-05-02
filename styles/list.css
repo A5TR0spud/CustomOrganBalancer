@@ -83,6 +83,8 @@
     padding: 1px;
     text-align: center;
 
+    cursor: help;
+
     background-color: rgb(198, 198, 198);
     border-width: 3px;
     border-radius: 0;

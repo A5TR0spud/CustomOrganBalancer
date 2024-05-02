@@ -78,6 +78,8 @@
     border-style: solid;
     padding: 6px 5px 5px;
     width: 200px;
+
+    cursor: text;
 }
 
 .give-command {
@@ -102,7 +104,7 @@
     padding: 1px;
     text-align: center;
 
-    cursor: pointer;
+    cursor: copy;
 
     border-width: 3px;
     border-radius: 0;
