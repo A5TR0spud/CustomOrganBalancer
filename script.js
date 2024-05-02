@@ -1,5 +1,7 @@
 createList();
 var totalsJson = [];
+var pseudoOrgan = 1; //0: false, 1: unset, 2: true
+var nbt_content = "";
 
 async function createList() {
     let x = await fetch("./data/organ_scores.json");
@@ -95,7 +97,7 @@ async function createList() {
                 }
             }
             const nbt_generation = document.getElementById("give-command");
-            var nbt_content = "";
+            nbt_content = "";
             for (let i = 0; i < totalsJson.length; i++) {
                 var totalItem = totalsJson[i];
                 if (totalItem.value == 0) {
@@ -107,11 +109,11 @@ async function createList() {
                 sidebarScoreList.appendChild(scoreItem);
                 nbt_content += '"' + totalItem.id + '": ' + totalItem.value + 'f'
                 if (i < totalsJson.length - 1) {
-                    nbt_content += ",";
+                    nbt_content += ", ";
                 }
             }
             document.getElementById("give-command-generator").style.width = sidebarScoreList.style.width;
-            nbt_generation.textContent = 'organData:{' + nbt_content + '}';
+            updateNBT();
 
             console.log(totalsJson);
         });
@@ -172,4 +174,29 @@ function openLink(arg) {
     window.open(arg, '_blank');
 }
 
-//todo: pseudo organs, json generator
+function updatePseudoOrgan() {
+    pseudoOrgan = (pseudoOrgan + 1) % 3;
+    document.getElementById("tooltip-cycle-text").textContent = pseudoOrgan == 0 ? "false" : pseudoOrgan == 1 ? "unset" : "true";
+    updateNBT();
+}
+
+function updateNBT() {
+    const nbt_generation = document.getElementById("give-command");
+    var nbt_pseudo = "";
+    if (pseudoOrgan == 1) {
+        nbt_pseudo = "";
+    }
+    else {
+        if (pseudoOrgan == 0) {
+            nbt_pseudo = '"pseudoOrgan": 0b';
+        } else {
+            nbt_pseudo = '"pseudoOrgan": 1b';
+        }
+        if (nbt_content != "") {
+            nbt_pseudo += ", ";
+        }
+    }
+    nbt_generation.textContent = 'organData:{' + nbt_pseudo + nbt_content + '}';
+}
+
+//todo: json generator
