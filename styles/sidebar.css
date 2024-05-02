@@ -1,53 +1,7 @@
-.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text, .hide-tooltip-text {
+.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text {
   text-align: left;
   line-height: 18px;
   margin: 20px 0 -5px 0;
-}
-
-.nbt-copy-button, .tooltip-cycle-button {
-    background-color: rgb(198, 198, 198);
-    padding: 1px;
-    text-align: center;
-
-    border-width: 3px;
-    border-radius: 0;
-    border-style: solid;
-    border-top-color: white;
-    border-right-color: rgb(85, 85, 85);
-    border-bottom-color: rgb(85, 85, 85);
-    border-left-color: white;
-}
-
-.nbt-copy-button {
-    height: 34px;
-    width: 34px;
-    cursor: copy;
-}
-
-.tooltip-cycle-button {
-    text-align: left;
-    position: absolute;
-    margin: -4px 0 0 6.25px;
-    height: 23px;
-    padding: 1px;
-}
-
-.tooltip-cycle-text {
-  font-family: Mojangles, Arial;
-  font-size: 13px;
-  word-spacing: 4px;
-  color: rgb(63, 63, 63);
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.hide-tooltip-text {
-    position: relative;
 }
 
 .sidebar-text-total {
@@ -143,20 +97,40 @@
     user-select: all; /* Standard syntax */
 }
 
-.copy-button-image {
-    height: 28px;
-    width: 28px;
-    margin: -1px 0 0 -1px;
-    padding: 0;
-    image-rendering: pixelated;
-    image-color: #3f3f3f;
+.nbt-copy-button {
+    background-color: rgb(198, 198, 198);
+    height: 34px;
+    width: 34px;
+    padding: 1px;
+
+    display: inline-block;
+
+    cursor: copy;
+
+    border-width: 3px;
+    border-radius: 0;
+    border-style: solid;
+    border-top-color: white;
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: white;
 }
 
-.nbt-copy-button:hover, .tooltip-cycle-button:hover {
+.copy-button-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    image-rendering: pixelated;
+    display: block;
+}
+
+.nbt-copy-button:hover {
     border-color: white;
 }
 
-.nbt-copy-button:active, .tooltip-cycle-button:active {
+.nbt-copy-button:active {
     background-color: #8b8b8b;
     border-top-color: rgb(55, 55, 55);
     border-right-color: white;
