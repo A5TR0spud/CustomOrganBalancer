@@ -4,6 +4,7 @@
   text-align: center;
   margin: 20px 0 20px 0;
   word-spacing: 5px;
+  flex: 1;
 }
 
 .header {
@@ -15,7 +16,7 @@
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
 
   background-color: rgb(198, 198, 198);
@@ -32,7 +33,7 @@
 .link-button-container {
     margin: 0 10.5px 0 0;
     padding: 0;
-    display: inline-block;
+    display: block;
 }
 
 .link-button {
@@ -71,10 +72,4 @@
     border-right-color: white;
     border-bottom-color: white;
     border-left-color: rgb(55, 55, 55);
-}
-
-.header-placeholder {
-    width: 68px;
-    margin: 0 10.5px 0 10.5px;
-    padding: 0;
 }
