@@ -195,7 +195,7 @@ function openRandomLink() {
         //drunk
         'https://youtu.be/T3hTwgDy_Ww?si=lXH-68Zae2MDux2Q',
         //echo
-        'https://youtu.be/IBtytCBNJW4?si=4FMWjDEUNos8ctkT',
+        'https://youtu.be/i92AZxL6Wl4?si=wfLUWXCZoPzX6DgM',
         //epoch
         'https://youtu.be/K3m3_7RoGZk?si=9hRwK_Gc9L3iDC_q',
         //escape velocity
@@ -203,7 +203,31 @@ function openRandomLink() {
         //never gonna give you up
         'https://youtu.be/dQw4w9WgXcQ?si=HbZf2yVj4-lGf6F-',
         //bad apple
-        'https://youtu.be/FtutLA63Cp8?si=c-vcN-xoh7Aju6DR'
+        'https://youtu.be/FtutLA63Cp8?si=c-vcN-xoh7Aju6DR',
+        //cosmo sheldrake the moss
+        'https://youtu.be/62RvnXZgHwQ?si=IOekVjMe304PhjuY',
+        //chonny jash the moss
+        'https://youtu.be/_HU1ZwN2PQ0?si=1rB4JhjaF7rUOUQI',
+        //stuck inside
+        'https://youtu.be/AWPB2p1CEZQ?si=vaBKCzGvpNomcZJV',
+        //terrible things
+        'https://youtu.be/0tBY30TS190?si=oQa4tSgC9JDA9CQp',
+        //hello world
+        'https://youtu.be/Yw6u6YkTgQ4?si=LgZTZvVlFxrZ2IzI',
+        //goodbye to a world
+        'https://youtu.be/W2TE0DjdNqI?si=GQ2tvB0sPzvCzko2',
+        //loser baby
+        'https://youtu.be/9sVoglgJjRg?si=bySPh8cg67O05BjI',
+        //don't be a fool
+        'https://youtu.be/6V02y3q1tpo?si=xIiZxnAYH00RV-8V',
+        //mindustry ost
+        'https://youtube.com/playlist?list=PLKtSsQFPB7SugSqHCfFIXMFeI4sqq2iNE&si=sGQRFoyRTQ5J81li',
+        //biggering
+        'https://youtu.be/cpyuolKoeAY?si=D0RH6ipWljnZCBdy',
+        //con lentitud poderosa
+        'https://youtu.be/Nn9trJXUrp0?si=m-Nr9-uQnTIV8sq2',
+        //here comes a savior
+        'https://youtu.be/LNXjBnZfu3Q?si=-gRdKbKzi8xn4hls'
     ];
     let randIndex = Math.floor(Math.random() * (links.length + 1));
     window.open(links[randIndex], '_blank');
