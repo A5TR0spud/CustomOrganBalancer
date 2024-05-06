@@ -29,20 +29,36 @@
   border-left-color: white;
 }
 
-.link-button-container {
+.link-button-container, .hidden-link-button-container {
     margin: 0 10.5px 0 10.5px;
-    width: 0;
     padding: 0;
     display: flex;
     justify-content: end;
+    align-items: center;
     gap: 0;
+}
+.hidden-link-button-container {
+    justify-content: start;
+}
+
+.feeling-lucky-text {
+    display: inline-block;
+    word-wrap: normal;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: visible;
+    visibility: hidden;
+    margin-left: 12px;
+}
+.hidden-link-button-container:hover .feeling-lucky-text {
+    visibility: visible;
 }
 
 .link-button {
     background-color: rgb(198, 198, 198);
     height: 34px;
     width: 34px;
-    padding: 0 3px 3px 0;
+    padding: 0;
     margin: 0;
 
     display: inline-block;
@@ -67,20 +83,19 @@
     margin: 0 -10.5px 0 10.5px;
 }
 
-.hidden-link-button .link-button-image {
+.hidden-link-button-container .link-button-image {
     visibility: hidden;
 }
 
-.hidden-link-button:hover .link-button-image {
+.hidden-link-button-container:hover .link-button-image {
     visibility: visible;
 }
 
 .link-button-image {
+    margin: -1px 0 0 -1.2px;
     margin-left: auto;
     margin-right: auto;
-    height: 28px;
-    width: 28px;
-    margin: 0;
+    width: 100%;
     padding: 0;
     image-rendering: pixelated;
     display: block;
