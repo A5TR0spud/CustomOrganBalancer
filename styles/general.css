@@ -3,17 +3,12 @@
   src: url(fonts/Mojang-Regular.ttf);
 }
 
-span {
-    -webkit-text-size-adjust: none;
-}
-
 @font-face {
   font-family: Mojangles-Bold;
   src: url(fonts/Mojang-Bold.ttf);
 }
 
 p {
-    -webkit-text-size-adjust: none;
   font-family: Mojangles, Arial;
   font-size: 13px;
   word-spacing: 4px;
@@ -35,6 +30,7 @@ body {
   padding-right: 50px;
   background-color: rgb(198, 198, 198);
   margin-bottom: 30px;
+  -webkit-text-size-adjust: none;
 }
 
 img {
