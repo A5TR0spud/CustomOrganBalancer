@@ -2,7 +2,7 @@
   font-family: Mojangles-Bold, Mojangles, Arial;
   font-size: 16px;
   text-align: center;
-  margin: 20px 0 20px 21px;
+  margin: 20px 0 20px 0;
   word-spacing: 5px;
   flex: 1;
 }
@@ -16,7 +16,7 @@
   z-index: 100;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
 
   background-color: rgb(198, 198, 198);
@@ -36,6 +36,7 @@
     justify-content: end;
     align-items: center;
     gap: 0;
+    flex: 0.2;
 }
 .hidden-link-button-container {
     justify-content: start;
@@ -49,6 +50,7 @@
     overflow: visible;
     visibility: hidden;
     margin-left: 12px;
+    width: 0;
 }
 .hidden-link-button-container:hover .feeling-lucky-text {
     visibility: visible;
@@ -74,20 +76,11 @@
     border-left-color: white;
 }
 
-.hidden-link-button {
-    border-style: none;
-    background-color: rgba(0, 0, 0, 0);
-    height: 34px;
-    width: 34px;
-    padding: 0 3px 3px 0;
-    margin: 0 -10.5px 0 10.5px;
-}
-
-.hidden-link-button-container .link-button-image {
+.hidden-link-button-container .link-button-image, .hidden-link-button-container .link-button {
     visibility: hidden;
 }
 
-.hidden-link-button-container:hover .link-button-image {
+.hidden-link-button-container:hover .link-button-image, .hidden-link-button-container:hover .link-button {
     visibility: visible;
 }
 
