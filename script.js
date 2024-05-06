@@ -174,6 +174,41 @@ function openLink(arg) {
     window.open(arg, '_blank');
 }
 
+function openRandomLink() {
+    let links = [
+        //combine harvester
+        'https://youtu.be/IgOcYyb8suU?si=6WXLN-iOU0Jz5Qmv',
+        //MEDIC!
+        'https://youtu.be/-6NQx4WRRg0?si=M7GABzaDouBfSsTk',
+        //fish
+        'https://youtu.be/YAgJ9XugGBo?si=_-E5uxFv74rD_wt9',
+        //corn
+        'https://youtu.be/j8qp3ITVqY0?si=rAu6o_2Y7zcNYDyX',
+        //chonny jash mind electric
+        'https://youtu.be/uIQbSzkXIsk?si=Y-U8pbSxD0bAcMyJ',
+        //creator
+        'https://youtu.be/Qtf8YFw8iZg?si=H0duiieO0FO92Gfe',
+        //adrift cover
+        'https://youtu.be/O_bdDtyow2Y?si=Zui4RHc5ix3bLfF3',
+        //pretty in pink
+        'https://youtu.be/eJUA0EYKFWI?si=gqCP9XMKRTjZWDY4',
+        //drunk
+        'https://youtu.be/T3hTwgDy_Ww?si=lXH-68Zae2MDux2Q',
+        //echo
+        'https://youtu.be/IBtytCBNJW4?si=4FMWjDEUNos8ctkT',
+        //epoch
+        'https://youtu.be/K3m3_7RoGZk?si=9hRwK_Gc9L3iDC_q',
+        //escape velocity
+        'https://youtu.be/csFnFkrLfRs?si=Yg5eilPj42LNdUA6',
+        //never gonna give you up
+        'https://youtu.be/dQw4w9WgXcQ?si=HbZf2yVj4-lGf6F-',
+        //bad apple
+        'https://youtu.be/FtutLA63Cp8?si=c-vcN-xoh7Aju6DR'
+    ];
+    let randIndex = Math.floor(Math.random() * (links.length + 1));
+    window.open(links[randIndex], '_blank');
+}
+
 function updatePseudoOrgan() {
     pseudoOrgan = (pseudoOrgan + 1) % 3;
     document.getElementById("tooltip-cycle-text").textContent = pseudoOrgan == 0 ? "false" : pseudoOrgan == 1 ? "unset" : "true";

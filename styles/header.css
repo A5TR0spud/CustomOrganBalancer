@@ -58,6 +58,23 @@
     border-left-color: white;
 }
 
+.hidden-link-button {
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    height: 34px;
+    width: 34px;
+    padding: 0 3px 3px 0;
+    margin: 0 -10.5px 0 10.5px;
+}
+
+.hidden-link-button .link-button-image {
+    visibility: hidden;
+}
+
+.hidden-link-button:hover .link-button-image {
+    visibility: visible;
+}
+
 .link-button-image {
     margin-left: auto;
     margin-right: auto;
@@ -69,11 +86,11 @@
     display: block;
 }
 
-.link-button:hover {
+.link-button:hover, .hidden-link-button:hover {
     border-color: white;
 }
 
-.link-button:active {
+.link-button:active, hidden-link-button:active {
     background-color: #8b8b8b;
     border-top-color: rgb(55, 55, 55);
     border-right-color: white;
