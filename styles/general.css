@@ -3,6 +3,10 @@
   src: url(fonts/Mojang-Regular.ttf);
 }
 
+span {
+    -webkit-text-size-adjust: none;
+}
+
 @font-face {
   font-family: Mojangles-Bold;
   src: url(fonts/Mojang-Bold.ttf);
