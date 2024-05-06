@@ -1,7 +1,7 @@
-.sidebar-text-total, .sidebar-text-verdict, .sidebar-score-list, .nbt-data-text, .hide-tooltip-text {
+.sidebar-text-generic, .sidebar-text-total, .sidebar-score-list, .hide-tooltip-text {
   text-align: left;
   line-height: 18px;
-  margin: 20px 0 -5px 0;
+  margin: 15px 0 0 0;
 }
 
 .hide-tooltip-text {
@@ -14,10 +14,6 @@
     overflow: hidden;
     display: block;
     width: 300px;
-}
-
-.nbt-data-text {
-    margin-bottom: 0;
 }
 
 .sidebar-score-list {
@@ -55,7 +51,7 @@
   min-width: 300px;
   z-index: 90;
 
-  padding: 0px 50px 50px 25px;
+  padding: 5px 25px 50px 25px;
 
   background-color: rgb(198, 198, 198);
   border-width: 3px;
@@ -70,18 +66,19 @@
 
 .nbt-data-flex {
     margin: 10px 0 0 0;
+    width: 275px;
     display: flex;
     justify-content: start;
 }
 
 .give-command-generator {
-    margin: 0 0 0 25px;
+    margin: 0 0 0 12px;
     background-color: black; /*#696969;*/
     border-color: white;
     border-width: 3px;
     border-style: solid;
-    padding: 6px 5px 5px;
-    width: 200px;
+    padding: 5px;
+    flex: 1;
 
     cursor: text;
 }
@@ -89,6 +86,7 @@
 .give-command {
     padding: 0;
     margin: 0;
+    width: 224px;
     color: #a8a8a8;
     word-wrap: break-word;
     text-overflow: ellipsis;
@@ -103,7 +101,7 @@
 
 .nbt-copy-button, .tooltip-cycle-button {
     background-color: rgb(198, 198, 198);
-    padding: 1px;
+    padding: 0 3px 3px 0;
 
     display: inline-block;
 
@@ -127,6 +125,7 @@
     width: 1fr;
     margin: -3px 0 0 12px;
     position: absolute;
+    padding: 2px;
 }
 
 .tooltip-cycle-text {
@@ -137,13 +136,14 @@
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-    margin: 2px 4px 2px 4px;
+    margin: 0;
 }
 
 .copy-button-image {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 28px;
+    height: 28px;
     margin: 0;
     padding: 0;
     image-rendering: pixelated;
