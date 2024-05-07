@@ -49,6 +49,8 @@
   bottom: 0;
   right: 0;
   min-width: 300px;
+  max-width: 40%;
+  width: auto;
   z-index: 90;
 
   padding: 5px 25px 50px 25px;
@@ -66,7 +68,8 @@
 
 .nbt-data-flex {
     margin: 10px 0 0 0;
-    width: 275px;
+    padding: 0;
+    width: 100%;
     display: flex;
     justify-content: start;
 }
@@ -78,15 +81,18 @@
     border-width: 3px;
     border-style: solid;
     padding: 5px;
+    position: relative;
     flex: 1;
 
     cursor: text;
 }
 
 .give-command {
+    position: absolute;
+    left: 0;
+    right: 0;
     padding: 0;
-    margin: 0;
-    width: 224px;
+    margin: 0 0 0 5px;
     color: #a8a8a8;
     word-wrap: break-word;
     text-overflow: ellipsis;
