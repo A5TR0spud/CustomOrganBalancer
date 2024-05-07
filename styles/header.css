@@ -105,3 +105,16 @@
     border-bottom-color: white;
     border-left-color: rgb(55, 55, 55);
 }
+
+.cob:active {
+    background-color: #e3c42c;
+    padding: 0;
+    margin: 0;
+    color: #6b340d;
+
+    display: inline-block;
+
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: #cf9f1f;
+}
