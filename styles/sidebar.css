@@ -107,7 +107,6 @@
 
 .nbt-copy-button, .tooltip-cycle-button {
     background-color: rgb(198, 198, 198);
-    padding: 0 3px 3px 0;
 
     display: inline-block;
 
@@ -124,6 +123,7 @@
     height: 34px;
     width: 34px;
     cursor: copy;
+    padding: 0;
 }
 
 .tooltip-cycle-button {
@@ -143,17 +143,6 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
     margin: 0;
-}
-
-.copy-button-image {
-    margin-left: auto;
-    margin-right: auto;
-    width: 28px;
-    height: 28px;
-    margin: 0;
-    padding: 0;
-    image-rendering: pixelated;
-    display: block;
 }
 
 .nbt-copy-button:hover, .tooltip-cycle-button:hover {

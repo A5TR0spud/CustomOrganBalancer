@@ -1,3 +1,5 @@
+randomNameEasterEggs();
+
 function copyNBT() {
     const toCopyElement = document.getElementById("give-command");
     var copyText = toCopyElement.textContent;
@@ -17,6 +19,7 @@ function openLink(arg) {
 }
 
 function openRandomLink() {
+    setCookie("lucky", "true", 10);
     let links = [
         //combine harvester
         'https://youtu.be/IgOcYyb8suU?si=6WXLN-iOU0Jz5Qmv',
@@ -83,4 +86,14 @@ function openRandomLink() {
     ];
     let randIndex = Math.floor(Math.random() * (links.length + 1));
     window.open(links[randIndex], '_blank');
+}
+
+function randomNameEasterEggs() {
+    if (getCookie("lucky") == "true" & Math.random() < 0.01) {
+        document.getElementById("sidebar-score-name").textContent = "Corn List:";
+        let iconsList = document.getElementsByClassName("button-image");
+        for (let i = 0; i < iconsList.length; i++) {
+            iconsList[i].src = "images/icons/corn.png";
+        }
+    }
 }
