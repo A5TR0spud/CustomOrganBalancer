@@ -97,6 +97,12 @@ function randomNameEasterEggs() {
             let name = list[i].src.substring(0, list[i].src.length-4);
             list[i].src = name + "_corn.png";
         }
+
+        list = document.getElementById("hidden-link-button-container").children;
+        for (let i = 0; i < list.length; i++) {
+            list[i].style.visibility = "visible";
+        }
+
         document.body.style.backgroundColor = "#ccc6b6";
     }
 }

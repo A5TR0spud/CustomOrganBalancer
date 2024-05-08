@@ -76,11 +76,11 @@
     border-left-color: white;
 }
 
-.hidden-link-button-container .button-image, .hidden-link-button-container .link-button {
+.hidden-link-button-container .link-button {
     visibility: hidden;
 }
 
-.hidden-link-button-container:hover .button-image, .hidden-link-button-container:hover .link-button {
+.hidden-link-button-container:hover .link-button {
     visibility: visible;
 }
 
