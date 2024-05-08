@@ -91,9 +91,12 @@ function openRandomLink() {
 function randomNameEasterEggs() {
     if (getCookie("lucky") == "true" & Math.random() < 0.01) {
         document.getElementById("sidebar-score-name").textContent = "Corn List:";
-        let iconsList = document.getElementsByClassName("button-image");
-        for (let i = 0; i < iconsList.length; i++) {
-            iconsList[i].src = "images/icons/corn.png";
+        document.getElementById("feeling-lucky-text").textContent = "I'm feeling corny";
+        let list = document.getElementsByClassName("button-image");
+        for (let i = 0; i < list.length; i++) {
+            let name = list[i].src.substring(0, list[i].src.length-4);
+            list[i].src = name + "_corn.png";
         }
+        document.body.style.backgroundColor = "#ccc6b6";
     }
 }
