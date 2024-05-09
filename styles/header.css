@@ -19,14 +19,14 @@
   justify-content: space-between;
   flex-direction: row;
 
-  background-color: rgb(198, 198, 198);
+  background-color: var(--background);
   border-width: 3px;
   border-radius: 0;
   border-style: solid;
-  border-top-color: white;
-  border-right-color: rgb(85, 85, 85);
-  border-bottom-color: rgb(85, 85, 85);
-  border-left-color: white;
+  border-top-color: var(--outset-top);
+  border-right-color: var(--outset-bottom);
+  border-bottom-color: var(--outset-bottom);
+  border-left-color: var(--outset-top);
 }
 
 .link-button-container, .hidden-link-button-container {
@@ -57,7 +57,7 @@
 }
 
 .link-button {
-    background-color: rgb(198, 198, 198);
+    background-color: var(--background);
     height: 34px;
     width: 34px;
     padding: 0;
@@ -70,10 +70,10 @@
     border-width: 3px;
     border-radius: 0;
     border-style: solid;
-    border-top-color: white;
-    border-right-color: rgb(85, 85, 85);
-    border-bottom-color: rgb(85, 85, 85);
-    border-left-color: white;
+    border-top-color: var(--outset-top);
+    border-right-color: var(--outset-bottom);
+    border-bottom-color: var(--outset-bottom);
+    border-left-color: var(--outset-top);
 }
 
 .hidden-link-button-container .link-button {
@@ -85,15 +85,15 @@
 }
 
 .link-button:hover, .hidden-link-button:hover {
-    border-color: white;
+    border-color: var(--outset-top);
 }
 
 .link-button:active, hidden-link-button:active {
-    background-color: #8b8b8b;
-    border-top-color: rgb(55, 55, 55);
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: rgb(55, 55, 55);
+    background-color: var(--selected-background);
+    border-top-color: var(--inset-top);
+    border-right-color: var(--inset-bottom);
+    border-bottom-color: var(--inset-bottom);
+    border-left-color: var(--inset-top);
 }
 
 .cob:active {

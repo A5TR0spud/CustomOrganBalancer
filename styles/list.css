@@ -2,7 +2,7 @@
   font-family: Mojangles, Arial;
   font-size: 13px;
   word-spacing: 4px;
-  color: rgb(63, 63, 63);
+  color: var(--text);
   list-style-type: none;
   line-height: 25px;
   display: flex;
@@ -24,7 +24,7 @@
     justify-content: start;
     align-items: top;
     border-bottom-style: solid;
-    border-bottom-color: #969696;
+    border-bottom-color: var(--divider);
     border-bottom-width: 3px;
     padding: 11px 0 0 0;
     width: 750px;
@@ -81,7 +81,7 @@
 .info-box {
     font-family: Mojangles, Arial;
     font-size: 13px;
-    color: rgb(63, 63, 63);
+    color: var(--text);
     display: inline;
 
     height: 23px;
@@ -91,31 +91,30 @@
 
     cursor: help;
 
-    background-color: rgb(198, 198, 198);
+    background-color: var(--background);
     border-width: 3px;
     border-radius: 0;
     border-style: solid;
-    border-top-color: white;
-    border-right-color: rgb(85, 85, 85);
-    border-bottom-color: rgb(85, 85, 85);
-    border-left-color: white;
+    border-top-color: var(--outset-top);
+    border-right-color: var(--outset-bottom);
+    border-bottom-color: var(--outset-bottom);
+    border-left-color: var(--outset-top);
     margin: 0 25px 0 0;
 }
 
 .info-box:hover {
-    outline: none;
-    color: white;
-    border-top-color: rgb(55, 55, 55);
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: rgb(55, 55, 55);
-    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+    color: var(--outset-top);
+    border-top-color: var(--inset-top);
+    border-right-color: var(--inset-bottom);
+    border-bottom-color: var(--inset-bottom);
+    border-left-color: var(--inset-top);
+    background-color: var(--selected-background); /*rgb(198, 198, 198);*/
 }
 
 .score-input {
     font-family: Mojangles, Arial;
     font-size: 13px;
-    color: rgb(63, 63, 63);
+    color: var(--text);
     display: inline;
 
     height: 23px;
@@ -124,34 +123,34 @@
     margin: 0 25px 0 0;
     text-align: right;
 
-    background-color: rgb(198, 198, 198);
+    background-color: var(--background);
     border-width: 3px;
     border-radius: 0;
     border-style: solid;
-    border-top-color: white;
-    border-right-color: rgb(85, 85, 85);
-    border-bottom-color: rgb(85, 85, 85);
-    border-left-color: white;
+    border-top-color: var(--outset-top);
+    border-right-color: var(--outset-bottom);
+    border-bottom-color: var(--outset-bottom);
+    border-left-color: var(--outset-top);
 }
 
 .score-input:hover {
     outline: none;
-    color: white;
-    border-top-color: rgb(55, 55, 55);
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: rgb(55, 55, 55);
-    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+    color: var(--outset-top);
+    border-top-color: var(--inset-top);
+    border-right-color: var(--inset-bottom);
+    border-bottom-color: var(--inset-bottom);
+    border-left-color: var(--inset-top);
+    background-color: var(--selected-background); /*rgb(198, 198, 198);*/
 }
 
 .score-input:focus {
     outline: none;
-    color: white;
-    border-top-color: rgb(55, 55, 55);
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: rgb(55, 55, 55);
-    background-color: #8b8b8b; /*rgb(198, 198, 198);*/
+    color: var(--outset-top);
+    border-top-color: var(--inset-top);
+    border-right-color: var(--inset-bottom);
+    border-bottom-color: var(--inset-bottom);
+    border-left-color: var(--inset-top);
+    background-color: var(--selected-background); /*rgb(198, 198, 198);*/
 }
 
 /* remove arrows from input field */

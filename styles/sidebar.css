@@ -55,14 +55,14 @@
 
   padding: 5px 25px 50px 25px;
 
-  background-color: rgb(198, 198, 198);
+  background-color: var(--background);
   border-width: 3px;
   border-radius: 0;
   border-style: solid;
-  border-top-color: white;
-  border-right-color: rgb(85, 85, 85);
-  border-bottom-color: rgb(85, 85, 85);
-  border-left-color: white;
+  border-top-color: var(--outset-top);
+  border-right-color: var(--outset-bottom);
+  border-bottom-color: var(--outset-bottom);
+  border-left-color: var(--outset-top);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -106,17 +106,17 @@
 }
 
 .nbt-copy-button, .tooltip-cycle-button {
-    background-color: rgb(198, 198, 198);
+    background-color: var(--background);
 
     display: inline-block;
 
     border-width: 3px;
     border-radius: 0;
     border-style: solid;
-    border-top-color: white;
-    border-right-color: rgb(85, 85, 85);
-    border-bottom-color: rgb(85, 85, 85);
-    border-left-color: white;
+    border-top-color: var(--outset-top);
+    border-right-color: var(--outset-bottom);
+    border-bottom-color: var(--outset-bottom);
+    border-left-color: var(--outset-top);
 }
 
 .nbt-copy-button {
@@ -138,7 +138,7 @@
     font-family: Mojangles, Arial;
     font-size: 13px;
     word-spacing: 4px;
-    color: rgb(63, 63, 63);
+    color: var(--text);
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
@@ -146,13 +146,13 @@
 }
 
 .nbt-copy-button:hover, .tooltip-cycle-button:hover {
-    border-color: white;
+    border-color: var(--outset-top);
 }
 
 .nbt-copy-button:active, .tooltip-cycle-button:active {
-    background-color: #8b8b8b;
-    border-top-color: rgb(55, 55, 55);
-    border-right-color: white;
-    border-bottom-color: white;
-    border-left-color: rgb(55, 55, 55);
+    background-color: var(--selected-background);
+    border-top-color: var(--inset-top);
+    border-right-color: var(--inset-bottom);
+    border-bottom-color: var(--inset-bottom);
+    border-left-color: var(--inset-top);
 }
