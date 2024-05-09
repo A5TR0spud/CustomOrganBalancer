@@ -1,4 +1,4 @@
-luckyCornEasterEgg();
+tryLuckyCornEasterEgg(false);
 
 function openRandomLink() {
     setCookie("lucky", "true", 10);
@@ -68,13 +68,14 @@ function openRandomLink() {
     ];
     let randIndex = Math.floor(Math.random() * (links.length + 1));
     window.open(links[randIndex], '_blank');
+    tryLuckyCornEasterEgg(true);
 }
 
 
-function luckyCornEasterEgg() {
+function tryLuckyCornEasterEgg(overrideCookie) {
     var r = document.querySelector(':root');
 
-    if (getCookie("lucky") == "true" & Math.random() < 0.005) {
+    if ((overrideCookie | getCookie("lucky") == "true") & Math.random() < 0.005) {
         document.getElementById("sidebar-score-name").textContent = "Corn List:";
         document.getElementById("feeling-lucky-text").textContent = "I'm feeling corny (0.5%)";
         let list = document.getElementsByClassName("button-image");
