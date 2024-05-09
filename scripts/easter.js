@@ -6,7 +6,7 @@ const links = [
     //fish
     'https://youtu.be/YAgJ9XugGBo?si=_-E5uxFv74rD_wt9',
     //corn
-    'https://youtu.be/j8qp3ITVqY0?si=rAu6o_2Y7zcNYDyX',
+    //corn is now exclusive to the 0.5% chance corn theme
     //chonny jash mind electric
     'https://youtu.be/uIQbSzkXIsk?si=Y-U8pbSxD0bAcMyJ',
     //creator
@@ -75,6 +75,7 @@ function feelingLucky() {
 function openRandomLink() {
     var link;
     if (isCornThemed) {
+        //corn by slimecicle
         link = 'https://youtu.be/j8qp3ITVqY0?si=rAu6o_2Y7zcNYDyX';
     } else {
         let i = Math.floor(Math.random() * (links.length + 1));
