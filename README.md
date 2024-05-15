@@ -1,4 +1,4 @@
 ## ChestCavityBalancing
-Site for balacing custom organs for the Minecraft mod Chest Cavity
+Site for balancing custom organs for the Minecraft mod Chest Cavity, and generating their NBT
 
 Internally in need of cleanup
