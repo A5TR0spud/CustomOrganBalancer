@@ -22,7 +22,7 @@ const links = [
     //epoch
     'https://youtu.be/K3m3_7RoGZk?si=9hRwK_Gc9L3iDC_q',
     //escape velocity
-    'https://youtu.be/csFnFkrLfRs?si=Yg5eilPj42LNdUA6',
+    'https://youtu.be/HKT4XiEayRc?si=8ihEatVV3y08VGGK',
     //never gonna give you up
     'https://youtu.be/dQw4w9WgXcQ?si=HbZf2yVj4-lGf6F-',
     //bad apple
