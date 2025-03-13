@@ -252,6 +252,13 @@
     "scoreDisplay": "prefix"
   },
   {
+    "id": "chestcavity:lightweight",
+    "name": "Lightweight",
+    "tooltip": "Positive values reduce gravity, negative values apply more gravity.",
+    "weight": 0.5,
+    "scoreDisplay": "prefix"
+  },
+  {
     "id": "chestcavity:luck",
     "name": "Luck",
     "tooltip": "Affects user luck. In vanilla, luck changes loot from loot tables with quality attributes and bonus rolls, which is most commonly a fishing feature.",
