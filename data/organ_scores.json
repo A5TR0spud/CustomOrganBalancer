@@ -256,7 +256,7 @@
     "name": "Lightweight",
     "tooltip": "Positive values reduce gravity, negative values apply more gravity.",
     "weight": 0.5,
-    "scoreDisplay": "prefix"
+    "scoreDisplay": "none"
   },
   {
     "id": "chestcavity:luck",
